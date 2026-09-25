@@ -7,15 +7,14 @@ Every policy can be flipped from pass to fail on demand, and the companion Terra
 config needs no cloud credentials.
 
 ```
-opa-tfe-test-kit/
-├── policy-set/                  <- the policy set TFE loads (set "Policies path" to this)
-│   ├── policies.hcl             <- policy names, queries, enforcement levels
-│   ├── lib/terraform_lib.rego   <- shared helpers (tests cross-file query resolution)
-│   └── policies/*.rego          <- one file per policy
-├── tests/*_test.rego            <- `opa test` unit tests (32 tests)
-├── mocks/{pass,fail,destroy}.json  <- sample TFE policy inputs
-├── scripts/eval-policy-set.sh   <- evaluates policies.hcl locally like TFE does
-├── test-workspace/main.tf       <- credential-free config to trigger each policy
+policy-set/                  <- the policy set TFE loads (set "Policies path" to this)
+├── policies.hcl             <- policy names, queries, enforcement levels
+├── lib/terraform_lib.rego   <- shared helpers (tests cross-file query resolution)
+└── policies/*.rego          <- one file per policy
+tests/*_test.rego            <- `opa test` unit tests (32 tests)
+mocks/{pass,fail,destroy}.json  <- sample TFE policy inputs
+scripts/eval-policy-set.sh   <- evaluates policies.hcl locally like TFE does
+test-workspace/main.tf       <- credential-free config to trigger each policy
 └── publish/main.tf              <- optional: upload the set with the tfe provider
 ```
 
