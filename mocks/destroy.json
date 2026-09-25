@@ -1,0 +1,180 @@
+{
+  "plan": {
+    "format_version": "1.2",
+    "terraform_version": "1.9.8",
+    "planned_values": {},
+    "output_changes": {},
+    "resource_changes": [
+      {
+        "address": "terraform_data.example[0]",
+        "mode": "managed",
+        "type": "terraform_data",
+        "name": "example",
+        "index": 0,
+        "provider_name": "terraform.io/builtin/terraform",
+        "change": {
+          "actions": [
+            "delete"
+          ],
+          "before": {
+            "id": "0000-0",
+            "input": {
+              "index": 0,
+              "owner": "platform-team"
+            },
+            "output": {
+              "index": 0,
+              "owner": "platform-team"
+            },
+            "triggers_replace": [
+              "1"
+            ]
+          },
+          "after": null,
+          "after_unknown": {
+            "id": true,
+            "output": true,
+            "input": {},
+            "triggers_replace": [
+              false
+            ]
+          },
+          "before_sensitive": {},
+          "after_sensitive": {
+            "input": {},
+            "triggers_replace": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "address": "terraform_data.example[1]",
+        "mode": "managed",
+        "type": "terraform_data",
+        "name": "example",
+        "index": 1,
+        "provider_name": "terraform.io/builtin/terraform",
+        "change": {
+          "actions": [
+            "delete"
+          ],
+          "before": {
+            "id": "0000-1",
+            "input": {
+              "index": 1,
+              "owner": "platform-team"
+            },
+            "output": {
+              "index": 1,
+              "owner": "platform-team"
+            },
+            "triggers_replace": [
+              "1"
+            ]
+          },
+          "after": null,
+          "after_unknown": {
+            "id": true,
+            "output": true,
+            "input": {},
+            "triggers_replace": [
+              false
+            ]
+          },
+          "before_sensitive": {},
+          "after_sensitive": {
+            "input": {},
+            "triggers_replace": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "address": "terraform_data.example[2]",
+        "mode": "managed",
+        "type": "terraform_data",
+        "name": "example",
+        "index": 2,
+        "provider_name": "terraform.io/builtin/terraform",
+        "change": {
+          "actions": [
+            "delete"
+          ],
+          "before": {
+            "id": "0000-2",
+            "input": {
+              "index": 2,
+              "owner": "platform-team"
+            },
+            "output": {
+              "index": 2,
+              "owner": "platform-team"
+            },
+            "triggers_replace": [
+              "1"
+            ]
+          },
+          "after": null,
+          "after_unknown": {
+            "id": true,
+            "output": true,
+            "input": {},
+            "triggers_replace": [
+              false
+            ]
+          },
+          "before_sensitive": {},
+          "after_sensitive": {
+            "input": {},
+            "triggers_replace": [
+              false
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "run": {
+    "id": "run-AbCdEf123456",
+    "created_at": "2026-09-25T14:00:00.000Z",
+    "created_by": "tester",
+    "message": "Queued manually via the Terraform Enterprise API",
+    "commit_sha": null,
+    "is_destroy": true,
+    "refresh": true,
+    "refresh_only": false,
+    "replace_addrs": null,
+    "speculative": false,
+    "target_addrs": null,
+    "project": {
+      "id": "prj-AbCdEf123456",
+      "name": "Default Project"
+    },
+    "variables": {
+      "owner": {
+        "category": "input",
+        "sensitive": false
+      },
+      "API_TOKEN": {
+        "category": "environment",
+        "sensitive": true
+      }
+    },
+    "organization": {
+      "name": "my-org"
+    },
+    "workspace": {
+      "id": "ws-AbCdEf123456",
+      "name": "opa-policy-test",
+      "created_at": "2026-09-01T12:00:00.000Z",
+      "description": null,
+      "execution_mode": "remote",
+      "auto_apply": false,
+      "tags": [],
+      "working_directory": null,
+      "vcs_repo": null
+    }
+  }
+}
